@@ -25,6 +25,8 @@ var builder = WebApplication.CreateBuilder(args);
 
         app.UseStaticFiles();
         
+        app.UseCors("CorsPolicy");  
+
         app.UseAuthorization();
 
         app.MapControllers();
